@@ -1,16 +1,56 @@
-# React + Vite
+## Frontend Test — Login Page 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Problem description
+Build a simple login page using HTML, CSS, and JavaScript 
 
-Currently, two official plugins are available:
+#### Page layout
+• Centered login form on a plain background. 
+• The form includes: 
+o Email input 
+o Password input 
+o Login button 
+o Optional “Forgot password?” link 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+#### Validation rules
+Email field: <br>
+• Must not be empty. 
+• Show an error if the email doesn’t exist.
 
-## React Compiler
+Password field: <br>
+• Must be between 8–16 characters. 
+• Must contain at least: 
+o one uppercase letter 
+o one lowercase letter 
+o one number 
+o one symbol 
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+#### Successful login
+• Hide the login form. 
+• Display a welcome message like: 
+Welcome, [user email]! 
+• Include a Logout button that returns to the login page.
 
-## Expanding the ESLint configuration
+### Setup
+This project was built in React with JavaScript. The CSS is done using Material UI.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Node version - 24.11.1
+
+The following steps were followed to initiate the project <br>
+
+1) Use Vite to setup and create a react project by the following command - <br>
+ npm create vite@latest login-page -- --template react
+
+2) Do npm i in the project directory to install dependencies
+
+3) Install Material UI dependencies using the following commands - <br>
+npm install @mui/material @emotion/react @emotion/styled <br>
+npm install @mui/icons-material
+
+### How to run?
+1) After cloning the repository, change directory to C.
+2) Use the following command to install the dependencies <br>
+    npm i <br>
+    Once the command is complete, the node modules folder and package-lock.json file will be generated.
+3) Run the local server using the command - npm run dev
+4) Open the localhost on  http://localhost:5173/
+

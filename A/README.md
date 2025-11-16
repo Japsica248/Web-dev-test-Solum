@@ -29,6 +29,8 @@ Enter two numbers separated by space: 1 4 1<br>
 Please enter exactly two numbers.<br>
 Enter two numbers separated by space: 1 4<br>
 
+### Approach
+Since the waves alternate in the sequence of x and -x, if the number of wave inputs is odd, the output will be zero and if the number of wave inputs is even, the output will be the size of the wave input.
 
 ### Output
 The output contains the final value of the the total energy after all n waves for each test case.
