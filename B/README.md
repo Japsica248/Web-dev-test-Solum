@@ -24,6 +24,20 @@ Enter number of test cases: r<br>
 Invalid input. Please enter an integer.<br>
 Enter number of test cases: 3<br>
 
+### Approach
+MINIMUM CRAFTS <br>
+To get minimum number of crafts, we must maximize the number of 6-unit crafts<br>
+Here we have 3 scenarios:<br>
+1. n is divisible by 6 - n%6 = 0, We get the minimum number (n_min)<br>
+2. n is not divisible by 6 - n% 6= 2, We remove 1 6-unit craft and add 2 4-unit crafts (n_min +1 )<br>
+3. n is not divisible by 6 - n%2 = 4, We add 1 4-unit craft (n_min + 1)<br>
+
+MAXIMUM CRAFTS<br>
+To get maximum number of crafts, we must maximize the number of 4-unit crafts<br>
+Here, we have 2 scenarios:<br>
+1. n is divisible by 4 - n%4 = 0, We get the maximum number (n_max)<br>
+2. n is not divisible by 4 - n%4 = 2, We remove 1 4-unit craft and add 1 6-unit craft (n_max)<br>
+
 ### Output
 It will output the minimum and maximum number of crafts, if the total number of propulsion units do not satisfy the given conditions, the number of crafts will be -1.<br>
 

@@ -4,31 +4,38 @@
 Build a simple login page using HTML, CSS, and JavaScript 
 
 #### Page layout
-• Centered login form on a plain background. 
-• The form includes: 
-o Email input 
-o Password input 
-o Login button 
-o Optional “Forgot password?” link 
+• Centered login form on a plain background. <br>
+• The form includes: <br>
+o Email input <br>
+o Password input <br>
+o Login button <br>
+o Optional “Forgot password?” link <br>
 
 #### Validation rules
 Email field: <br>
-• Must not be empty. 
-• Show an error if the email doesn’t exist.
+• Must not be empty. <br>
+• Show an error if the email doesn’t exist.<br>
 
 Password field: <br>
-• Must be between 8–16 characters. 
-• Must contain at least: 
-o one uppercase letter 
-o one lowercase letter 
-o one number 
-o one symbol 
+• Must be between 8–16 characters. <br>
+• Must contain at least: <br>
+o one uppercase letter <br>
+o one lowercase letter <br>
+o one number <br>
+o one symbol <br>
 
 #### Successful login
-• Hide the login form. 
+• Hide the login form. <br>
 • Display a welcome message like: 
-Welcome, [user email]! 
-• Include a Logout button that returns to the login page.
+Welcome, [user email]! <br>
+• Include a Logout button that returns to the login page.<br>
+
+### Unsuccessful login
+An error message is shown to the user if the credentials do not match
+
+### Forgot password
+• If the email is blank, the popup asks the user to fill in the email id. <br>
+• If there is an email id, the user is notified that a password reset link has been sent to their email.<br>
 
 ### Setup
 This project was built in React with JavaScript. The CSS is done using Material UI.
