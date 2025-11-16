@@ -12,11 +12,12 @@ def get_valid_input(prompt, min_val, max_val):
 
 num_inputs = get_valid_input("Enter number of cases: ", 1, 100)
 
-value_num_cases = []
 # This loop gets the numbers x and n and makes sure they are integers and in the range 1 -10
 # If the numbers are not valid, it throws an error and the loop terminates only when we have the required number of inputs.
 
-# All the inputs are stored in the value_num_cases list as tuples
+# Since the waves alternate in the sequence of x and -x, if the number of wave inputs is odd,
+#the output will be zero and if the number of wave inputs is even, the output will be the size of
+#the wave input.
 for _ in range(num_inputs):
     while True:
         try:
@@ -24,20 +25,14 @@ for _ in range(num_inputs):
             if len(parts) != 2:
                 print("Please enter exactly two numbers.")
                 continue
-            a, b = map(int, parts)
-            if 1 <= a <= 10 and 1 <= b <= 10:
-                value_num_cases.append((a, b))
+            wave_value, wave_number = map(int, parts)
+            if 1 <= wave_number <= 10 and 1 <= wave_value <= 10:
+                if (wave_number %2 == 0):
+                    print(0)
+                else:
+                    print(wave_value)
                 break
             else:
                 print("Both numbers must be between 1 and 10.")
         except ValueError:
             print("Invalid input. Please enter integers only.")
-
-# Since the waves alternate in the sequence of x and -x, if the number of wave inputs is odd,
-#the output will be zero and if the number of wave inputs is even, the output will be the size of
-#the wave input.
-for i, case in enumerate(value_num_cases):
-    if (value_num_cases[i][1] %2 == 0):
-        print(0)
-    else:
-        print(value_num_cases[i][0])
