@@ -12,30 +12,30 @@ There are total n propulsion units. The task is to determine the minimum and max
 ### Input
 The first line contains an integer t (1 ≤ t ≤ 1000) — the number of test cases. 
 Each of the next t lines contains one integer n (1 ≤ n ≤ 10¹⁸) — the total number of 
-propulsion units. 
+propulsion units. <br>
 
-For example:
-Enter number of test cases: 4
-Enter number of propulsion units: 4
+For example:<br>
+Enter number of test cases: 4<br>
+Enter number of propulsion units: 4<br>
 
-If the input is of incorrect type, it will throw an error and will ask again for input.
+If the input is of incorrect type, it will throw an error and will ask again for input.<br>
 
-Enter number of test cases: r
-Invalid input. Please enter an integer.
-Enter number of test cases: 3
+Enter number of test cases: r<br>
+Invalid input. Please enter an integer.<br>
+Enter number of test cases: 3<br>
 
 ### Output
-It will output the minimum and maximum number of crafts, if the total number of propulsion units do not satisfy the given conditions, the number of crafts will be -1.
+It will output the minimum and maximum number of crafts, if the total number of propulsion units do not satisfy the given conditions, the number of crafts will be -1.<br>
 
-For example:
-Enter number of propulsion units: 4
-1 1
-Enter number of propulsion units: 7
--1
+For example:<br>
+Enter number of propulsion units: 4<br>
+1 1<br>
+Enter number of propulsion units: 7<br>
+-1<br>
 
 ### Execution
 1) Have python 3 installed.
-2) In the terminal/command prompt, open the foler B. 
+2) In the terminal/command prompt, open the folder B. 
 3) Use the command python main.py
 4) Enter the values as directed by the prompt.
 
