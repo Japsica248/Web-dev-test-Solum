@@ -54,7 +54,7 @@ Enter number of propulsion units: 7<br>
 4) Enter the values as directed by the prompt.
 
 ### Complexity
-Time Complexity O(num_cases) - The entire code runs once for 1 test case
+Time Complexity O(num_cases) - The entire code runs once for 1 test case<br>
 Space Complexity O(1) - All the test cases are printed after execution.
 
 where num_cases is the number of test cases.

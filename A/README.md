@@ -52,7 +52,7 @@ Enter two numbers separated by space: 4 7<br>
 4) Enter the values as directed by the prompt.
 
 ### Complexity
-Time Complexity O(num_cases) - The entire code runs once for 1 test case
+Time Complexity O(num_cases) - The entire code runs once for 1 test case<br>
 Space Complexity O(num_cases) - All the test cases are stored as a list of tuples before execution
 
 where num_cases is the number of test cases.
